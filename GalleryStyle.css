@@ -1,0 +1,79 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    background: #EBE7E7;
+  }
+/* heading and sub heading*/
+  h1, h3 {
+    font-family: cursive;
+    font-size: xx-large;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    color: #c09642;
+    font-size: 60px;
+  }
+
+  h3 {
+    color: rgb(132, 131, 131);
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+    background: #E0DDDD;
+  }
+  /* the gallery using flexbox */
+  #gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+  }
+  /* sizing and stylign the images */
+  #gallery img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 0 4px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px #c09642;
+  }
+/* just a simple hover affect to make the image larger when hovered */
+  #gallery img:hover {
+   transform: scale(1.2);
+  }
+
+  .footer {
+    background-color: #E0DDDD;
+    color: #c09642;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  /* added media queries so that the page is responsive */
+  @media (max-width: 800px) {
+    #gallery img {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #gallery img {
+      width: 100%;
+    }
+  } 
